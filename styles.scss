@@ -292,16 +292,14 @@ body {
 }
 
 .content {
-  // background-color: white;
+  background-color: white;
   position: relative;
-
+  display: flex;
   .img-parallax {
     @include containers(white, center) {
       width: 700px;
       margin-top: -15rem;
       margin-left: 112px;
-      position: absolute;
-      top: 0;
     }
   }
 
@@ -325,8 +323,6 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: -277px;
-    position: absolute;
-    top: 0;
   }
 
   .notice1 {
@@ -482,17 +478,16 @@ body {
 
 // responsive body
 body {
-  @include media-query(200px) {
+  @media screen and (min-width: 200px) and (max-width: 499px) {
     position: relative;
     margin-top: 85.8%;
   }
-  @include media-query(500px) {
+  @media screen and (min-width: 500px) and (max-width: 1099) {
     position: relative;
     margin-top: 55.8%;
   }
-  @include media-query(1100px) {
+  @media screen and (min-width: 1100px) {
     position: relative;
-    margin-top: 25.8%;
   }
 }
 
