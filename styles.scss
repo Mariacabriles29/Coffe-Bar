@@ -366,16 +366,13 @@ body {
 .section-1 {
   margin: 0 auto;
   margin-top: 49px;
-  // display: flex;
-  //justify-content: space-between;
   width: 320px;
   background-color: rgb(240, 240, 240);
   .social-networks {
     margin: 0 auto;
     text-align: center;
     height: 100px;
-    width: 26vw;
-    // margin-top: 30px;
+    width: 19vw;
 
     h4 {
       position: 0 auto;
@@ -452,6 +449,38 @@ body {
       text-decoration: none;
     }
   }
+  .lastest-articles {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    h3 {
+      padding: 3px;
+      background-color: #961928;
+      color: white;
+    }
+  }
+  .date-1 {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    div {
+      display: block;
+      float: left;
+      img {
+        display: inline-block;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+    p {
+      clear: both;
+    }
+    hr {
+      width: 25%;
+      margin-left: 14.2%;
+    }
+  }
 }
 //  end of section-1
 
@@ -490,7 +519,7 @@ body {
     position: relative;
   }
 }
-
+//efectos para los botones de temas
 .button {
   border-style: solid;
   border-radius: 5px;
@@ -538,4 +567,35 @@ body {
   background-color: rgb(171, 171, 171);
   transition: all;
   transition-duration: 1.5s;
+}
+.related {
+  @include containers(left, none);
+  margin-top: 10%;
+}
+.related .line-2 {
+  width: 20%;
+  height: 5%;
+  margin-top: 2.5%;
+  background-color: rgb(150, 35, 40);
+  color: red;
+}
+.related .line-2 {
+  color: rgb(150, 35, 40);
+  background-color: rgb(150, 35, 40);
+}
+.related {
+  div {
+    display: block;
+    h2 {
+      position: absolute;
+      left: 22%;
+    }
+    p {
+      float: left;
+      position: relative;
+      margin-top: -9%;
+      font-size: 3em;
+      opacity: 0.2;
+    }
+  }
 }

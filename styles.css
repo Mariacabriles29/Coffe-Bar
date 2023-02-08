@@ -460,7 +460,7 @@ body {
   margin: 0 auto;
   text-align: center;
   height: 100px;
-  width: 26vw;
+  width: 19vw;
 }
 .section-1 .social-networks h4 {
   position: 0 auto;
@@ -529,6 +529,38 @@ body {
   padding: 0%;
   border-radius: 5px;
   text-decoration: none;
+}
+.section-1 .lastest-articles {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.section-1 .lastest-articles h3 {
+  padding: 3px;
+  background-color: #961928;
+  color: white;
+}
+.section-1 .date-1 {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+.section-1 .date-1 div {
+  display: block;
+  float: left;
+}
+.section-1 .date-1 div img {
+  display: inline-block;
+}
+.section-1 .date-1 div p {
+  display: inline-block;
+}
+.section-1 .date-1 p {
+  clear: both;
+}
+.section-1 .date-1 hr {
+  width: 25%;
+  margin-left: 14.2%;
 }
 
 @media only screen and (min-width: 200px) {
@@ -625,4 +657,47 @@ body {
   transition: all;
   -webkit-transition-duration: 1.5s;
           transition-duration: 1.5s;
+}
+
+.related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: left;
+  margin-top: 10%;
+}
+
+.related .line-2 {
+  width: 20%;
+  height: 5%;
+  margin-top: 2.5%;
+  background-color: rgb(150, 35, 40);
+  color: red;
+}
+
+.related .line-2 {
+  color: rgb(150, 35, 40);
+  background-color: rgb(150, 35, 40);
+}
+
+.related div {
+  display: block;
+}
+.related div h2 {
+  position: absolute;
+  left: 22%;
+}
+.related div p {
+  float: left;
+  position: relative;
+  margin-top: -9%;
+  font-size: 3em;
+  opacity: 0.2;
 }
