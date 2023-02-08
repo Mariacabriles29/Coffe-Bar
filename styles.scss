@@ -1,7 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 body {
   position: relative;
   background-color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+header {
+  height: 350px;
 }
 @mixin containers($color, $justify) {
   display: flex;
@@ -19,12 +29,13 @@ body {
 .front-page {
   background-image: url("./img/img-principal-ib.jpg");
   width: 100vw;
-  position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 350px;
   margin-top: 0;
   z-index: -1;
+  position: fixed;
+  top: 0;
 }
 .start {
   @include containers(#c8a27e, center);
@@ -34,8 +45,9 @@ body {
 .start div {
   width: max-content;
   display: flex;
+  align-items: center;
   justify-content: flex-end;
-  margin-right: -10rem;
+  margin-right: -15rem;
 }
 .star p {
   float: right;
@@ -50,7 +62,7 @@ body {
 .icons svg {
   height: 25px;
   align-items: center;
-  padding: 12px;
+  padding: 5px;
 }
 .img {
   max-width: 100%;
@@ -63,7 +75,7 @@ body {
 .hamburger {
   position: fixed;
   background-color: transparent;
-  left: 0;
+  right: 0;
   top: 0;
   height: 30px;
   width: 30px;
@@ -153,7 +165,7 @@ body {
   font-size: 1.5rem;
   line-height: 3em;
   height: 3em;
-  color: rgb(12, 12, 12);
+  color: rgb(26, 24, 24);
   text-transform: none;
   font-weight: bold;
 }
@@ -187,13 +199,7 @@ body {
   transform: translateY(-100%);
   border-bottom: 2px solid white;
 }
-// .main-menu.logo {
-//   margin-bottom: 10px;
-// }
-//clase que se va cambiar desde javascript
-// .main-menu--show {
-//   transform: translateY(0);
-// }
+
 @include media-query(650px) {
   .main-menu {
     flex-direction: row;
@@ -213,13 +219,13 @@ body {
   }
 }
 
-.content {
+.content-menu {
   display: flex;
   justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
-  .content {
+  .content-menu {
     display: none;
   }
 }
@@ -232,4 +238,309 @@ body {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.information1 {
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  background-color: #d2d3d5;
+  position: relative;
+  justify-content: flex-start;
+  width: 100vw;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+@media only screen and (max-width: 1024px) {
+  .information1 {
+    display: none;
+  }
+}
+.info1-menu {
+  display: flex;
+  margin-left: 111px;
+  height: 30px;
+  width: 420px;
+}
+.info1-menu_link {
+  text-transform: uppercase;
+  display: block;
+}
+.info1-menu_item {
+  padding: 2rem;
+  text-decoration: none;
+  color: gray;
+}
+.information1 .info1-menu div .linev1 {
+  position: absolute;
+  top: 10%;
+  border: none;
+  border-left: 1px solid #73848c;
+  height: 24px;
+  width: 1px;
+}
+
+.information2 {
+  height: 366px;
+  width: 100vw;
+  background-color: rgb(150, 35, 40);
+}
+@media only screen and (max-width: 1024px) {
+  .information2 {
+    display: none;
+  }
+}
+
+.content {
+  // background-color: white;
+  position: relative;
+
+  .img-parallax {
+    @include containers(white, center) {
+      width: 700px;
+      margin-top: -15rem;
+      margin-left: 112px;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .notice1 {
+    width: 100%;
+    height: 1433px;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.75);
+  }
+}
+.line2 {
+  padding: 0.3%;
+  width: 90%;
+  background-color: rgb(175, 175, 175);
+}
+
+@include media-query(650px) {
+  .img-parallax {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -277px;
+    position: absolute;
+    top: 0;
+  }
+
+  .notice1 {
+    overflow: scroll;
+    scroll-behavior: smooth;
+  }
+  .notice1 article {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+}
+// efectos para los botones de la noticia1
+.button1 {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: rgb(176, 176, 176);
+  color: rgb(171, 171, 171);
+  width: 70px;
+  height: 50px;
+
+  text-align: center;
+  background-color: white;
+  transition: all;
+  transition-duration: 1.5s;
+}
+.button1:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(171, 171, 171);
+  text-align: center;
+  color: white;
+  background-color: rgb(171, 171, 171);
+  transition: all;
+  transition-duration: 1.5s;
+}
+// end img parallax and notice1
+
+.section-1 {
+  margin: 0 auto;
+  margin-top: 49px;
+  // display: flex;
+  //justify-content: space-between;
+  width: 320px;
+  background-color: rgb(240, 240, 240);
+  .social-networks {
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+    width: 26vw;
+    // margin-top: 30px;
+
+    h4 {
+      position: 0 auto;
+    }
+    .networks {
+      font-size: 24px;
+      .social-networks1 {
+        .fa-facebook {
+          color: rgb(150, 25, 40);
+          margin-left: 1%;
+          padding: 1%;
+        }
+        .fa-twitter {
+          color: rgb(150, 25, 40);
+          margin-left: 1%;
+          padding: 1%;
+        }
+        .fa-youtube-play {
+          color: rgb(150, 25, 40);
+          margin-left: 1%;
+          padding: 1%;
+        }
+        .fa-instagram {
+          color: rgb(150, 25, 40);
+          margin-left: 1%;
+          padding: 1%;
+        }
+        .fa-facebook:hover {
+          color: white;
+          background-color: #3b5998;
+          padding: 1%;
+
+          border-radius: 20%;
+          margin-left: 1%;
+        }
+        .fa-twitter:hover {
+          color: white;
+          margin-left: 1%;
+          padding: 1%;
+          border-radius: 70%;
+
+          margin-left: 1%;
+          background-color: #00acee;
+        }
+        .fa-youtube-play:hover {
+          color: white;
+          margin-left: 1%;
+          padding: 1%;
+          border-radius: 70%;
+          margin-left: 1%;
+
+          background-color: rgb(150, 25, 40);
+        }
+        .fa-instagram:hover {
+          color: white;
+          margin-left: 1%;
+          padding: 1%;
+
+          border-radius: 70%;
+          margin-left: 1%;
+          background-color: orange;
+        }
+      }
+    }
+  }
+  .themes {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    height: 185px;
+    .btn {
+      padding: 0%;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+}
+//  end of section-1
+
+@media only screen and (min-width: 200px) {
+  .section-1 {
+    background-color: #f0f0f0;
+  }
+}
+
+// efecto parallax
+.parallas,
+.content {
+  margin: 0 auto;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  max-width: 100%;
+  position: relative;
+}
+
+// responsive body
+body {
+  @include media-query(200px) {
+    position: relative;
+    margin-top: 85.8%;
+  }
+  @include media-query(500px) {
+    position: relative;
+    margin-top: 55.8%;
+  }
+  @include media-query(1100px) {
+    position: relative;
+    margin-top: 25.8%;
+  }
+}
+
+.button {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: rgb(150, 35, 40);
+  color: rgb(150, 35, 40);
+  width: 110px;
+  height: 50px;
+
+  text-align: center;
+  background-color: white;
+  transition: all;
+  transition-duration: 1.5s;
+}
+.button:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(150, 35, 40);
+  text-align: center;
+  color: white;
+  background-color: rgb(150, 35, 40);
+  transition: all;
+  transition-duration: 1.5s;
+}
+.button1 {
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  border-color: rgb(176, 176, 176);
+  color: rgb(171, 171, 171);
+  width: 70px;
+  height: 50px;
+
+  text-align: center;
+  background-color: white;
+  transition: all;
+  transition-duration: 1.5s;
+}
+.button1:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(171, 171, 171);
+  text-align: center;
+  color: white;
+  background-color: rgb(171, 171, 171);
+  transition: all;
+  transition-duration: 1.5s;
 }
