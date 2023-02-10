@@ -9,7 +9,7 @@ body {
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
@@ -33,12 +33,12 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
   background-color: #c8a27e;
   width: 100vw;
   height: 30px;
@@ -52,11 +52,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   margin-right: -15rem;
 }
 
@@ -77,8 +77,8 @@ header {
 .icons svg {
   height: 25px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 5px;
 }
 
@@ -101,10 +101,12 @@ body {
   padding: 20px 20px;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  -webkit-transition: -webkit-transform 0.25s
+    cubic-bezier(0.05, 1.04, 0.72, 0.98);
   transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
   transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98), -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+  transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98),
+    -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
   z-index: 1002;
   cursor: pointer;
   -webkit-user-select: none;
@@ -112,7 +114,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 @media screen and (min-width: 760px) {
@@ -163,7 +165,7 @@ body {
 
 .menuppal.is_active {
   -webkit-transform: translate3d(0px, 0px, 0px);
-          transform: translate3d(0px, 0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 .menuppal {
@@ -175,11 +177,13 @@ body {
   position: fixed;
   top: 0;
   -webkit-transform: translate3d(0px, -100%, 0px);
-          transform: translate3d(0px, -100%, 0px);
-  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transform: translate3d(0px, -100%, 0px);
+  -webkit-transition: -webkit-transform 0.35s
+    cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
   transition: -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
   transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s, -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+  transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s,
+    -webkit-transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
   width: 100%;
   z-index: 1001;
 }
@@ -231,20 +235,20 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   border-bottom: 2px solid white;
 }
 
@@ -252,30 +256,30 @@ body {
   .main-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @media only screen and (max-width: 700px) {
   .main-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 @media only screen and (max-width: 400px) {
   .main-menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .content-menu {
@@ -283,8 +287,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -308,17 +312,17 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 45px;
   background-color: #d2d3d5;
   position: relative;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 100vw;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   opacity: 1;
 }
 
@@ -379,12 +383,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
   background-color: white;
   width: 700px;
   margin-top: -15rem;
@@ -434,7 +438,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .button1:hover {
@@ -447,7 +451,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .section-1 {
@@ -614,7 +618,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .button:hover {
@@ -627,7 +631,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .button1 {
@@ -643,7 +647,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .button1:hover {
@@ -656,7 +660,7 @@ body {
   -webkit-transition: all;
   transition: all;
   -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  transition-duration: 1.5s;
 }
 
 .related {
@@ -664,12 +668,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: none;
-      -ms-flex-pack: none;
-          justify-content: none;
+  -ms-flex-pack: none;
+  justify-content: none;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  align-content: space-around;
   background-color: left;
   margin-top: 10%;
 }
@@ -680,11 +684,6 @@ body {
   margin-top: 2.5%;
   background-color: rgb(150, 35, 40);
   color: red;
-}
-
-.related .line-2 {
-  color: rgb(150, 35, 40);
-  background-color: rgb(150, 35, 40);
 }
 
 .related div {
