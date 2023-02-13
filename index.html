@@ -165,7 +165,7 @@
               <a href="#"><i class="fa fa-instagram"></i></a>
 
             </div>
-
+<hr>
           </div>
 
         </div>
@@ -207,10 +207,11 @@
           <p>loremp ipsum dolor sit ame</p>
 
         </div>
+      </div> <!-- end section-1 -->
       
     </div><!--end content-->
     
-  </div> <!-- end section-1 -->
+
   <div class="related">
    <div class="line3"></div>
    <div>
@@ -219,7 +220,7 @@
    </div><!--end of article one related-->
    
   </div><!--end of related-->
-   
+   <section class="cars">
     <div class="information3">
       <img class="blog1" src="img/Blog Interna.jpg">
       <div class="section-info3">
@@ -227,7 +228,7 @@
         <p class="text-blog1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo qui consequatur debitis corporis omnis fugit odio eveniet doloremque sequi voluptas quibusdam, blanditiis, cupiditate atque asperiores magni rerum consequuntur ea.
         </p>
-        <input id="open1" class="boton" type="button" name="boton" value="Leer mas">
+        <a  class="boton1" href="#modal1">Leer mas</a>
       </div>
     </div>
     <br>
@@ -238,7 +239,8 @@
         <p class="text-blog1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo qui consequatur debitis corporis omnis fugit odio eveniet doloremque sequi voluptas quibusdam, blanditiis, cupiditate atque asperiores magni rerum consequuntur ea.
         </p>
-        <input id="open2" class="boton" type="button" name="boton" value="Leer mas">
+
+        <a class="boton1" href="#modal1" >Leer mas</a>
       </div>
     </div>
     <div class="information4">
@@ -249,15 +251,22 @@
         </div>
         <h2>Lorem imsup</h2>
         <p class="text-blog1">Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque cum quasi distinctio in. Atque autem nobis nisi, eos ullam recusandae illum quae reprehenderit cum consectetur commodi, dolore nam veritatis!</p>
-        <input id="open3" class="boton" type="button" name="boton" value="Leer mas">
+        <a  class="boton1" href="#modal1">Leer mas</a>
       </div>
       </div>
+      
     </div>
-    <div class="information5">
-      <input id="open3" class="boton" type="button" name="boton" value="Ver mas">
+    
+  </section>
+  <section class="cars2">
+  <div class="information5">
+
+    <a  class="boton" href="#modal1">Ver mas</a>
     </div>
-  
-    <!-- <div class="information6">
+  </section>
+    
+<!--   
+    <section class="information6">
       <div class="information7">
         <div class="contact">
           <hr class="footer-line1">
@@ -285,7 +294,8 @@
                 </td>
               </tr>
               <tr>
-                <td><input id="boton_formulario" class="boton" type="button" name="contacto" value="Enviar">
+                <td>
+                  <button id ="boton_formulario" class="boton" name="contacto">Enviar</button>
 
                 </td>
               </tr>
@@ -328,7 +338,7 @@
     </div>
       </div>
 
-    </div>-->
+    </section> -->
     <!-- end of information6 -->
     <div class="red-footer">
 
@@ -342,30 +352,38 @@
       
       </div>
     </div>
-    <!-- Modals -->
-    <!-- <div id="mymodal" class="modal">
-      <div class="flex-modal" id="flex">
-        <div class="modal-content">
-          <div class="header-modal">
-            <span class="close" id="close">&times;</span>
+  <!-- modales -->
+ 
+
+
+<div id="modal1" class="modalmask">
+  <div class="modal-flex" id="flex">
+    <div class="modal-content">
+      <div class="header-modal">
+    <div class="modalbox movedown">
+    <div class="modal-paragraph">
+        
+        <a href="#close" title="Close" class="close">X</a>
+        <img class="modal-img" src="img/Blog Interna2.jpg">
+        <h2>Loremp</h2>
+        <p class="texts">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptates hic cupiditate rem provident perspiciatis voluptatem consequuntur assumenda accusantium quam, minus, ipsum ad maiores, porro nihil. Nihil distinctio doloremque accusamus!</p>
+      </div>
+      <div class="end-footer">
+        <div class="end-footer1">
+          <div>
+            <p>Diseñado por:</p>
+            <img src="img/Muva.png" >
           </div>
-          <div class="modal-paragraph" id="paragraph">
-            <img  class="modal-img" src="img/Blog Interna2.jpg">
-            <h1>Titulo Loremp</h1>
-            <p class="texts"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ea illum doloremque pariatur in aliquam expedita reprehenderit aspernatur ipsa distinctio nesciunt quisquam ab tenetur cumque nihil, recusandae velit voluptate magni.
-          </div>
-          <div class="end-footer">
-            <div class="end-footer1">
-              <div>
-                <p>Diseñado por:</p>
-                <img src="img/Muva.png" >
-              </div>
-            
-            </div>
-          </div>
-        </div>
-      </div> 
-    </div>--><!-- end of modals -->
+    </div>
+  </div>
+</div>   
+
+  
+  </div>
+</div>
+</div>
+</div>
+
 
   </body>
   <script src="./scripts.js"></script>
